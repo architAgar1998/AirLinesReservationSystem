@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'booking-section'`, () => {
+  it(`should have as title 'airline-reservation-system'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('booking-section');
+    expect(app.title).toEqual('airline-reservation-system');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('booking-section app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('airline-reservation-system app is running!');
   });
 });
